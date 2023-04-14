@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue Slider</title>
+</head>
+<body>
+  <main>
+
+    <h1>Photo Album </h1>
+
+    <div id="app">
+
+      <div class="slider">
+        <div class="box">
+          <img :src="images[counter]">
+        </div>        
+      </div>
+
+      <div class="thumb">
+        <div class="minibox" >
+          <span class="image"><img :src="image[counter]"></span>
+          <span class="image"><img :src="image[counter]"></span>
+          <span class="image"><img :src="image[counter]"></span>
+          <span class="image"><img :src="image[counter]"></span>
+          <span class="image"><img :src="image[counter]"></span>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
